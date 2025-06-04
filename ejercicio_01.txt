@@ -1,2 +1,0 @@
-Hola, este es un ejemplo de escritura en un archivo.
-Puedes agregar más líneas si lo deseas.
