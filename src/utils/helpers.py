@@ -9,8 +9,8 @@ def create_file(file_path):
     print(f'Archivo {file_path} creado correctamente.')
 
 #Listar archivos
-def list_files(directory='.'):
-    return [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
+# def list_files(directory='.'):
+#     return [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
 
 #Abrir archivos
 def open_file(file_path):
@@ -26,3 +26,13 @@ def delete_file(file_path):
     print(f"Archivo {file_path} eliminado correctamente.")
     print(file_path)
 
+
+
+#Listar archivos
+def list_files(directory='.'):
+    list_files = []
+    for file in os.listdir(directory):
+        if os.path.isfile(file):
+            list_files.append(file)
+    
+    return list_files

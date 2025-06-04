@@ -25,7 +25,10 @@ while True:
         print("Se ha seleccionado la opcion 2: Listar archivos")
         files = help.list_files()
         print("Archivos en el directorio actual:")
-        print(files)
+        for file in files:
+            print(file)
+        
+        
 
     elif case == '3':
         print("Se ha seleccionado la opcion 3: Abrir archivo")
